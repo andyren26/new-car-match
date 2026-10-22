@@ -1,0 +1,15 @@
+// Site-wide constants. Fill in the 【】 placeholders before going live — they
+// appear in the terms, privacy policy and disclaimer.
+export const SITE_NAME = "新車媒合";
+export const SITE_TAGLINE = "車商刊登新車、買家刊登需求，免費配對";
+
+export const OPERATOR_NAME = "【營運者姓名或公司名稱】";
+export const CONTACT_EMAIL = "【聯絡信箱】";
+
+// Bump TERMS_VERSION whenever the terms or privacy policy change: every member
+// is then asked to agree again before posting (see the /consent page).
+export const TERMS_VERSION = "2026-10-22";
+export const TERMS_EFFECTIVE_DATE = "2026 年 10 月 22 日";
+
+// 165 is Taiwan's national anti-fraud hotline (內政部警政署 165 反詐騙諮詢專線).
+export const ANTI_FRAUD_HOTLINE = "165";
