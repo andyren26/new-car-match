@@ -152,6 +152,8 @@ Deno.serve(async () => {
       }),
     });
     if (res.ok) {
+      const { id } = await res.json().catch(() => ({ id: null }));
+      console.log("sent", d.recipient_listing_id, "resend id", id);
       const { error: markErr } = await supabase.rpc("mark_match_digest_sent", {
         p_recipient_listing: d.recipient_listing_id,
         p_ids: d.notification_ids,
