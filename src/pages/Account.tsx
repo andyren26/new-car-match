@@ -3,6 +3,7 @@ import { useLoaderData, useRevalidator } from "react-router";
 import { BadgeCheck } from "lucide-react";
 import { toast } from "sonner";
 
+import NotificationToggle from "@/components/NotificationToggle";
 import PageShell, { PageTitle } from "@/components/PageShell";
 import { supabase } from "@/integrations/supabase/client";
 import { useHead } from "@/hooks/use-head";
@@ -154,6 +155,8 @@ export default function Account() {
             </button>
           </form>
         )}
+
+        <NotificationToggle userId={p.id} role={p.role} />
       </div>
     </PageShell>
   );

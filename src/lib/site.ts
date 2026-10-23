@@ -8,8 +8,8 @@ export const CONTACT_EMAIL = "【聯絡信箱】";
 
 // Bump TERMS_VERSION whenever the terms or privacy policy change: every member
 // is then asked to agree again before posting (see the /consent page).
-export const TERMS_VERSION = "2026-10-22";
-export const TERMS_EFFECTIVE_DATE = "2026 年 10 月 22 日";
+export const TERMS_VERSION = "2026-10-23";
+export const TERMS_EFFECTIVE_DATE = "2026 年 10 月 23 日";
 
 // 165 is Taiwan's national anti-fraud hotline (內政部警政署 165 反詐騙諮詢專線).
 export const ANTI_FRAUD_HOTLINE = "165";

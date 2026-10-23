@@ -18,6 +18,7 @@ import MyListings from "@/pages/MyListings";
 import Messages from "@/pages/Messages";
 import Account from "@/pages/Account";
 import Consent from "@/pages/Consent";
+import Unsubscribe from "@/pages/Unsubscribe";
 import Admin from "@/pages/Admin";
 import Legal from "@/pages/Legal";
 import { ErrorComponent, NotFoundComponent } from "@/pages/RootErrors";
@@ -76,6 +77,7 @@ export const routes: RouteObject[] = [
       { path: "forgot-password", element: <ForgotPasswordPage /> },
       { path: "reset-password", element: <ResetPasswordPage /> },
       { path: "consent", loader: requireSession, element: <Consent /> },
+      { path: "unsubscribe", element: <Unsubscribe /> },
       { path: "cars", loader: optionalSession, element: <Browse kind="sell" /> },
       { path: "wanted", loader: optionalSession, element: <Browse kind="want" /> },
       { path: "listings/:id", loader: optionalSession, element: <ListingDetail /> },

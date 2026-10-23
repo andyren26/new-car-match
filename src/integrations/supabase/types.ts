@@ -67,6 +67,7 @@ export type Database = {
           reviewed_at: string | null;
           reviewed_by: string | null;
           approved_at: string | null;
+          last_notified_at: string | null;
           created_at: string;
           updated_at: string;
         };
@@ -290,6 +291,24 @@ export type Database = {
           },
         ];
       };
+      notification_settings: {
+        Row: {
+          user_id: string;
+          email_matches: boolean;
+          updated_at: string;
+        };
+        Insert: {
+          user_id: string;
+          email_matches?: boolean;
+          updated_at?: string;
+        };
+        Update: {
+          user_id?: string;
+          email_matches?: boolean;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
@@ -307,6 +326,7 @@ export type Database = {
         Args: { p_approve: boolean; p_id: string; p_note?: string };
         Returns: undefined;
       };
+      unsubscribe_matches: { Args: { p_token: string }; Returns: boolean };
       send_message: {
         Args: { p_body: string; p_listing: string; p_to?: string };
         Returns: string;
