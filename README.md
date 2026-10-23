@@ -43,7 +43,7 @@
    - `VITE_SUPABASE_PUBLISHABLE_KEY`
 6. 配對通知信：把 Resend API key 存進 Supabase Vault（名稱 `resend_api_key`），部署 `supabase/functions/send-match-emails`
    （verify_jwt 關閉），再執行 `20261023000000_match_notifications.sql` 檔尾註解裡的 `cron.schedule`。寄件網域須已在 Resend 驗證。
-7. 編輯 `src/lib/site.ts`，填入營運者名稱與聯絡信箱；並在 `src/pages/Legal.tsx` 填入管轄法院。
+7. 營運者名稱與聯絡信箱在 `src/lib/site.ts`，管轄法院在 `src/pages/Legal.tsx`。
    **條款、隱私權政策與免責聲明是草稿，正式上線前請請律師審閱。**
    之後修改條款時，把 `TERMS_VERSION` 改成新日期，所有會員下次刊登前會被要求重新同意。
 

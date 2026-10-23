@@ -1,10 +1,10 @@
-// Site-wide constants. Fill in the 【】 placeholders before going live — they
-// appear in the terms, privacy policy and disclaimer.
+// Site-wide constants. The operator details below appear in the terms,
+// privacy policy and disclaimer.
 export const SITE_NAME = "新車媒合";
 export const SITE_TAGLINE = "車商刊登新車、買家刊登需求，免費配對";
 
-export const OPERATOR_NAME = "【營運者姓名或公司名稱】";
-export const CONTACT_EMAIL = "【聯絡信箱】";
+export const OPERATOR_NAME = "方玠仁";
+export const CONTACT_EMAIL = "andyren26@gmail.com";
 
 // Bump TERMS_VERSION whenever the terms or privacy policy change: every member
 // is then asked to agree again before posting (see the /consent page).

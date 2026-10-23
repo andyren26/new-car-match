@@ -12,8 +12,8 @@ import {
 } from "@/lib/site";
 
 // NOTE: these texts are a starting draft written for a free, no-fee matching
-// site. Have them reviewed by a lawyer and fill in the 【】 placeholders in
-// src/lib/site.ts before launch.
+// site. Have them reviewed by a lawyer; operator details come from
+// src/lib/site.ts.
 
 type Doc = { title: string; eyebrow: string; intro: string; sections: [string, string[]][] };
 
@@ -84,7 +84,7 @@ const DOCS: Record<"terms" | "privacy" | "disclaimer", Doc> = {
       [
         "八、準據法與管轄",
         [
-          "本條款以中華民國法律為準據法。因本條款所生爭議，雙方同意以臺灣【　　】地方法院為第一審管轄法院。",
+          "本條款以中華民國法律為準據法。因本條款所生爭議，雙方同意以臺灣臺南地方法院為第一審管轄法院。",
         ],
       ],
     ],
